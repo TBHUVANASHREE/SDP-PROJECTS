@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pages</title>
+</head>
+<body>
+        <style>
+            body{text-align:center;}
+            table, th, td {border: 1px solid black; text-align:center;border-collapse: collapse;}
+            .center {
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #courseList{display: inline-block;text-align: left;}
+        </style>
+    </head>
+    <body>
+        <div style="background-color:pink">
+            <h1 id="table-heading">TABLES AND LISTS</h1><br>
+            <table class="center" id="courseTable">
+            <tr><th>Roll No</th><th>Name</th><th>Course</th><th>Department</th></tr>
+            <tr><td>101</td><td>HARSHITHA</td><td>Computer</td><td>CS</td></tr>
+            <tr><td>102</td><td>DIKSHITHA</td><td>Information Technology</td><td>IT</td></tr>
+            <tr><td>103</td><td>PON MADHUMITHA</td><td>Mechanics</td><td>ME</td></tr>
+            <tr><td>104</td><td>SURENDHAR</td><td>Electronics</td><td>EEE</td></tr>
+            <tr><td>105</td><td>LOKSHANA</td><td>artificial intelligence</td><td>AI</td></tr>
+            <tr><td>106</td><td>LAAKITHA</td><td>communication</td><td>ECE</td></tr>
+            </table><br>
+            <h2 id="courseHeading">No Of Courses Available</h2>
+            <ul id="courseList"><li>Computer Science</li><li>Electronics</li><li>Aerounetics</li><li>Mechanical</li><li>Artificial Intelligence</li></ul>
+        </div>
+            
+        <div style="background-color:pink">
+            <h1 id="imageHeading">Image Map</h1>
+            <img src="https://images.unsplash.com/photo-1579338775661-7d0b8621ec83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29mZmVlJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="Workplace" usemap="#workmap" width="400" height="379">
+        </div>
+            
+        <div style="background-color:pink">
+            <h1>FILL THE FORM</h1>
+            <form id="login-form">
+            <label>Name :</label>
+            <input type="text" id="fname"><br><br>
+            <label>Password :</label>
+            <input type="text"><br><br>
+            <label>Email :</label>
+            <input type="text"><br><br>
+            <label for="courses">Courses :</label>
+            <select name="Courses" id="course">
+              <option value="Computer Science">Computer Science</option>
+              <option value="IT">IT</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="AI">AI</option>
+            </select><br><br>
+            <label for="Address">Address :</label>
+            <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br><br>
+            <label for="Country">Country :</label>
+            <input list="Countries" name="Countries" id="Country">
+            <datalist id="Countries">
+              <option value="India">
+              <option value="Sri Lanka">
+              <option value="England">
+              <option value="Germany">
+              <option value="US">
+            </datalist><br><br>
+            <button id="submit_btn" type="submit" form="login-form" value="Submit">Submit</button>
+            </form>
+        </div>
+            
+        <div style="background-color:pink">
+            <h1 id="frameHeading">FRAMES IN HTML</h1><br>
+            <iframe id="frameImage1" src="https://i.pinimg.com/originals/89/ad/1f/89ad1f413de58358e757b6da8444709f.jpg"></iframe>
+            <iframe id="frameImage2" src="https://i.pinimg.com/originals/89/ad/1f/89ad1f413de58358e757b6da8444709f.jpg"></iframe>
+        </div> 
+</body>
+</html>
