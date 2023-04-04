@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-right: 20px;
+    }
+    td{
+      text-align: left;
+    }
+    th{
+      text-align: center;
+      padding-left: 20px;
+    }
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .division{
+        text-align: center;
+        background-color: pink;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .tablee{
+        text-align: center;
+        background-color: pink;
+    }
+    .div-form{
+        text-align: center;
+        background-color: pink;
+        padding-bottom: 10px;
+    }
+    .list{
+        text-align: center;
+    }
+    ul {
+        display: inline-block;
+        text-align: left;
+    }
+    .div-end{
+        background-color: pink;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+</style>
+<body>
+    <div class="division">
+        <h2 id="heading">Navigate To Different Web Pages</h2><br>
+        <a id="login" href="#login-form">LOGIN</a><br>
+        <br>
+        <a id="table" href="#table-1">TABLE</a><br>
+        <br>
+        <a id="about" href="#about-heading">ABOUT</a>
+    </div>
+    <div class="div-form">
+        <h4>Registration</h4><br>
+        <form id="login-form">
+            <label>Name :</label>
+            <input type="text" id="fname">
+            <br><br>
+            <label>Password :</label>
+            <input type="password">
+            <br><br>
+            <label>Email :</label>
+            <input type="email">
+            <br><br>
+            <label for="courses">Courses :</label>
+            <select name="Courses" id="course">
+              <option value="Computer Science">Computer Science</option>
+              <option value="IT">IT</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="AI">AI</option>
+            </select>
+            <br><br>
+            <label for="Address">Address :</label>
+            <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br><br>
+            <label for="Country">Country :</label>
+            <input list="Countries" name="Countries" id="Country">
+            <datalist id="Countries">
+              <option value="India">
+              <option value="Russia">
+              <option value="Japan">
+              <option value="Germany">
+              <option value="UK">
+            </datalist><br><br>
+            <button id="submit_btn" type="submit" form="login-form" value="Submit">Submit</button>
+        </form>
+    </div>
+    <div class="tablee">
+    <h1 id="heading">TABLES AND LISTS</h1><br>
+    <table class="center" id="table-1">
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Department</th>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>abcd</td>
+          <td>Computer</td>
+          <td>CS</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>abcd</td>
+          <td>Electonics and communication</td>
+          <td>ECE</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>abcd</td>
+          <td>Mechanics</td>
+          <td>ME</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>abcd</td>
+          <td>Information technology</td>
+          <td>IT</td>
+        </tr>
+        <tr>
+          <td>105</td>
+          <td>abcd</td>
+          <td>artificial intelligence</td>
+          <td>AI</td>
+        </tr>
+        <tr>
+          <td>106</td>
+          <td>abcd</td>
+          <td>computer</td>
+          <td>CS</td>
+        </tr>
+      </table><br>
+      <div class="list">
+        <h2 id="courses">No Of Courses Available</h2>
+            <ul id="list-1">
+            <li>Computer Science</li>
+            <li>Electronics</li>
+            <li>Aerounetics</li>
+            <li>Mechanical</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+      </div>
+    </div>
+    <div class="div-end" >
+        <h1 id="about-heading">About Page</h1>
+        <p id="description">A page is a oneside of a leaf paper,parchment or other material in a book, magazine, newspaper, or other collections of sheets, on which text or illustration can be printed, written or drawn to create documents.It can beuse
+          measure of communicating general quantityof information or more specific quantity.
+        </p>
+    </div>
+</body>
+</html>
